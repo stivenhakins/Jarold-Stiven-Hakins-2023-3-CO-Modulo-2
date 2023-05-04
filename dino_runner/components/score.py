@@ -4,9 +4,9 @@ from dino_runner.utils.constants import FONT_STYLE
 
 
 class Score():
-    highest = 0
     def __init__(self):
         self.score = 0
+        self.highest = 0
 
     def update_score(self, game):
         self.score += 1

@@ -27,3 +27,9 @@ class Message:
         text_rect = text.get_rect()
         text_rect.center = (self.HALF_SCREEN_WIDTH, self.HALF_SCREEN_HEIGHT + 120)
         screen.blit(text, text_rect)
+    
+    def time_to_show(self, screen, time, power_type):
+        text = self.font.render(f'time left with {power_type} is: {time}', True, (0, 0, 0))
+        text_rect = text.get_rect()
+        text_rect.center = (540, 50)
+        screen.blit(text, text_rect)
